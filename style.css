@@ -1,0 +1,211 @@
+@media (max-width: 576px){
+    .main-info {
+        flex-direction: column;
+        align-items: normal;
+        
+    }
+}
+html {
+    font-size: 17px;
+}
+.page{
+    position: relative;
+    height: 100vh;
+}
+.view-picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.main-picture {
+    background-image: url(https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_mlechnyj_put_gorizont_124692_1280x720.jpg);
+}
+.main-info { 
+    max-width: 1920px;
+    min-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(216, 189, 205);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-info button{
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.055);
+}
+.main-info h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+}
+.p1 {
+    font-size: 30px;
+}
+
+.secondary-picture {
+    background-image: url(https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_chelovek_fonar_noch_115032_1920x1080.jpg);
+}
+.sec-info { 
+    max-width: 1920px;
+    min-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(121, 89, 128, 0.753);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec-info button{
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.055);
+}
+.sec-info h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+}
+
+.main-menu {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(47, 79, 79, 0.466);
+    padding: .5rem 1rem;
+}
+
+.menu-list {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+.menu-list a{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.911);
+}
+.menu-list li{
+    list-style-type: none;
+}
+
+.bi-cloud-haze2-fill {
+    display: none;
+}
+
+.promo {
+    background: linear-gradient(rgb(104, 98, 41),rgb(2, 2, 12));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(15, 12, 12, 0.692);
+    text-align: center;
+    padding: 5rem;
+    min-height: 100vh;
+    height: auto;
+}
+
+.services {
+    display: grid;
+    margin-top: 2rem;
+    --columns-num: 4;
+    grid-template-columns: repeat(var(--columns-num), 227px);
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.services-card{
+    height: 290px;
+    box-shadow: 0 2px 20px rgb(0 0 0/17%);
+    border-radius: 5px;
+    background-color: #8787a8c9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-card:hover{
+    box-shadow: 0 2px 20px 17px rgb(0 0 0 / 16%);
+}
+.services-card img{
+    height: 160px;
+    width: 160px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .services{
+        --columns-num: 2;
+    }
+}
+
+@media (max-width: 576px){
+    .main-menu{
+        flex-wrap: wrap;
+    }
+    .bi-cloud-haze2-fill{
+        display: block;
+        color: whitesmoke;
+        width: 1.3rem;
+        height: 1.3rem;
+        cursor: pointer;
+    }
+    .menu-list{
+        width: 100%;
+        height: 0;
+        --menu-li-height: 1rem;
+        --menu-li-gap: .5rem;
+        --menu-elems-num: 5;
+        flex-direction: column;
+        gap: var(--menu-li-gap);
+        padding: 0;
+        overflow: hidden;
+        transition: height .7s;
+    }
+    .menu-list.show {
+        height: calc((var(--menu-li-height) + var(--menu-li-gap)) * var(--menu-elems-num));
+    }
+    .menu-list li{
+        height: var(--menu-li-height);
+    }
+    .services{
+        --columns-num: 1;
+    }
+    .promo {
+        height: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #8787a8;
+    
+  }
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #6a85b6, #bac8e0);
+  }
+ 

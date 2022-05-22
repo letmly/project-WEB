@@ -1,0 +1,139 @@
+<!-- HTML 5-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHY?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <nav class="main-menu">
+        <a href="#" id="TOP" class="navbar-brand">МЭЙН</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-cloud-haze2-fill" viewBox="0 0 16 16">
+            <path
+                d="M8.5 2a5.001 5.001 0 0 1 4.905 4.027A3 3 0 0 1 13 12H3.5A3.5 3.5 0 0 1 .035 9H5.5a.5.5 0 0 0 0-1H.035a3.5 3.5 0 0 1 3.871-2.977A5.001 5.001 0 0 1 8.5 2zm-6 8a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zM0 13.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z" />
+        </svg>
+        <ul class="menu-list">
+            <!-- li*5>a[href="#"]{Page $} -->
+            <li><a href="#" id="promo-link">мороженое</a></li>
+            <li><a href="#" id="eat-link">(〜￣▽￣)〜</a></li>
+        </ul>
+    </nav>
+    <section class="page TOP">
+        <div class="main-picture view-picture"></div>
+        <div class="main-info">
+            <h1>----------</h1>
+            <p class="p1">idk really</p>
+            <button id="ove"> пупупу заварю ка кофейку </button>
+        </div>
+    </section>
+    <section class="page promo">
+        <h2>The best thing people ever created </h2>
+        <p> (замороженный сок) </p>
+        <div class="services">
+            <div class="services-card">
+                <img src="http://www.cholod.ru/content/catalog/bb96e659c3612fa421a421ca6a2facaa.png" alt="">
+                <h3>
+                    THE BEST!!!
+                </h3>
+                <button type="button" class="btn btn-secondary">СЪЕШЬ МЕНЯ</button>
+            </div>
+            <div class="services-card">
+                <img src="http://www.cholod.ru/content/catalog/a9720639416b00e75d6d771144f80b50.png" alt="">
+                <h3>
+                    apel'sin granat
+                </h3>
+                <button type="button" class="btn btn-secondary">СЪЕШЬ МЕНЯ</button>
+            </div>
+            <div class="services-card">
+                <img src="http://www.cholod.ru/content/catalog/03bb81eaf52ee55178a90dc626e2a5df.png" alt="">
+                <h3>
+                    бабл-гам 0_0
+                </h3>
+                <button type="button" class="btn btn-secondary">СЪЕШЬ МЕНЯ</button>
+            </div>
+            <div class="services-card">
+                <img src="http://www.cholod.ru/content/catalog/8c7238d6a770e5a98788503e9a0402fa.png" alt="">
+                <h3 >
+                    (*･∀･)／＼(･∀･*) 
+                </h3>
+                <button type="button" class="btn btn-secondary">СЪЕШЬ МЕНЯ</button>
+            </div>
+        </div>
+    </section>
+    <section class="page secondary">
+        <div class="secondary-picture view-picture"></div>
+        <div class="sec-info">
+            <h2>----------------------------</h2>
+            <p class="p1">wrld onn druggs </p>
+            <button id="top" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"> ваше предожение </button>
+        </div>
+    </section>
+
+    <!-- МОД ОКНО ТЕСТ-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">---------</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-order">
+                        <label class="form-label">
+                            ник
+                            <input type="text" class="form-control" name="nick">
+                        </label>
+                        <label class="form-label">
+                            id бункера
+                            <input class="form-control" type="tel" name="idbunkera">
+                        </label>
+                        <label for="select-way">Мэйк э дисижен </label>
+                        <select name="way" id="select-way" class="form-select" aria-label="Default select example">
+                            <option selected>sadj</option>
+                            <option value="meow^^">((мяу(...</option>
+                            <option value="brick">кирпич</option>
+                            <option value="jump">джамп</option>
+                            <option value="loneliness">лоинлесс</option>
+                        </select>
+                        <label class="form-label" for="tripp-info">
+                            напишите чё-нибудь
+                        </label>
+                        <textarea class="form-control" id="tripp-info" type="text" name="info"
+                            style="width: 100%;"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">go away <3 </button>
+                            <button id="btn-order" type="button" class="btn btn-primary">send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+POST http://localhost:1337/api/sadway
+Content-Type: application/json
+
+{
+    "nick": "ZYBENKO M.P.",
+    "way": "meow",
+    "idbunkera": "AAAADDADDDA",
+    "info": "someonoe save me please!"
+}
+
+###
+
+POST http://localhost:1337/api/admin
+Content-Type: application/json
+
+{
+    "name": "CHIKIBAMBONI",
+    "password": "killmeplease"
+}
+
+###
+
+POST http://localhost:1337/api/login
+Content-Type: application/json
+
+{
+    "name": "CHIKIBAMBONI",
+    "password": "killmeplease"
+}
+
+###
+GET http://localhost:1337/api/sadway
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjUyNDU2MTMyLCJleHAiOjE2NTI0NzQxMzJ9.TxSes5LRXa_hRw3CFYdSmrnDRW7TxoMclO3fmc3Tlyo

@@ -8,7 +8,7 @@ strtBut.onclick = function () {
         behavior: 'smooth'
     })
 }
-// acssascscascsa
+
 menuBut.onclick = function () {
     menuList.classList.toggle('show')
 }
@@ -46,7 +46,6 @@ btnord.onclick = function () {
         info
     }
     const laughingJSON = JSON.stringify(laughing)
-    //console.log(cryingJSON)
     fetch('http://localhost:1337').then(function (response) {
         if (response.ok) {
             return response.text()

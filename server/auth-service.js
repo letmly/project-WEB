@@ -14,14 +14,14 @@ function verifyToken(req, res, next) {
         const token = req.headers['authorization'].replace(/(bearer|jwt)\s+/, '')
         jwt.verify(token, secret, (err, decodedToken) => {
             if (err) {
-                return res.status(401).send({ message: "ТЫ КУДА ЗВОНИШЬ, СЫНОК?" })
+                return res.status(401).send({ message: "ТЫ КУДА ЗВОНИШЬ?" })
             }
             req.credentials = { id: decodedToken.id }
             next()
         })
     }
     else {
-        return res.status(401).send({ message: "ТЫ КУДА ЗВОНИШЬ, СЫНОК?" })
+        return res.status(401).send({ message: "ТЫ КУДА ЗВОНИШЬ?" })
     }
 }
 

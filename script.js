@@ -2,12 +2,8 @@
 let menuBut = document.querySelector('.bi-cloud-haze2-fill')
 let menuList = document.querySelector('.menu-list')
 
-// strtBut.onclick = function () {
-//     window.scrollTo({
-//         top: window.innerHeight,
-//         behavior: 'smooth'
-//     })
-// }
+
+
 
 menuBut.onclick = function () {
     menuList.classList.toggle('show')

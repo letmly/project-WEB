@@ -5,7 +5,7 @@ Content-Type: application/json
     "nick": "ZYBENKO M.P.",
     "way": "meow",
     "idbunkera": "AAAADDADDDA",
-    "info": "someonoe save me please!"
+    "info": "someonoe!"
 }
 
 ###
@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
     "name": "CHIKIBAMBONI",
-    "password": "killmeplease"
+    "password": "12345"
 }
 
 ###
@@ -25,7 +25,7 @@ Content-Type: application/json
 
 {
     "name": "CHIKIBAMBONI",
-    "password": "killmeplease"
+    "password": "12345"
 }
 
 ###

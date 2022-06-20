@@ -1,26 +1,45 @@
-let strtBut = document.getElementById('ove')
+// let strtBut = document.getElementById('ove')
 let menuBut = document.querySelector('.bi-cloud-haze2-fill')
 let menuList = document.querySelector('.menu-list')
 
-strtBut.onclick = function () {
-    window.scrollTo({
-        top: window.innerHeight,
-        behavior: 'smooth'
-    })
-}
-// acssascscascsa
+// strtBut.onclick = function () {
+//     window.scrollTo({
+//         top: window.innerHeight,
+//         behavior: 'smooth'
+//     })
+// }
+
 menuBut.onclick = function () {
     menuList.classList.toggle('show')
 }
 
-document.getElementById("promo-link").addEventListener("click", function (event) {
-    linkHandler(event, '.promo')
-})
-document.getElementById("eat-link").addEventListener("click", function (event) {
-    linkHandler(event, '.secondary')
-})
+// document.getElementById("actuality-link").addEventListener("click", function (event) {
+//     event.preventDefault()
+//     document.querySelector('.newpage-benefit').scrollIntoView({
+//         block: 'start',
+//         behavior: 'smooth'
+//     })
+// })
 document.getElementById("TOP").addEventListener("click", function (event) {
     linkHandler(event, '.TOP')
+})
+document.getElementById("actuality-link").addEventListener("click", function (event) {
+    linkHandler(event, '.newpage-benefit')
+})
+document.getElementById("forwho-link").addEventListener("click", function (event) {
+    linkHandler(event, '.newpage-forwho')
+})
+document.getElementById("howdoesitworks-link").addEventListener("click", function (event) {
+    linkHandler(event, '.newpage-howworks')
+})
+document.getElementById("characters-link").addEventListener("click", function (event) {
+    linkHandler(event, '.newpage-characters')
+})
+document.getElementById("modules-link").addEventListener("click", function (event) {
+    linkHandler(event, '.newpage-modules')
+})
+document.getElementById("connect-link").addEventListener("click", function (event) {
+    linkHandler(event, '.page2')
 })
 
 function linkHandler(event, className) {
@@ -46,7 +65,6 @@ btnord.onclick = function () {
         info
     }
     const laughingJSON = JSON.stringify(laughing)
-    //console.log(cryingJSON)
     fetch('http://localhost:1337').then(function (response) {
         if (response.ok) {
             return response.text()

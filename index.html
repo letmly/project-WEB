@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WHY?</title>
+    <title>SmartPot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +18,15 @@
 
 
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/formenu/logo.png" type="image/x-icon">
 </head>
 
 <body>
 
 
+    <!-- МЕНЮШКА -->
     <nav class="main-menu">
-        <a href="#" id="TOP" class="navbar-brand">МЭЙН</a>
+        <a href="#" id="TOP" class="navbar-brand">Главная</a>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-cloud-haze2-fill" viewBox="0 0 16 16">
             <path
@@ -33,19 +34,280 @@
         </svg>
         <ul class="menu-list">
             <!-- li*5>a[href="#"]{Page $} -->
-            <li><a href="#" id="promo-link">мороженое</a></li>
-            <li><a href="#" id="eat-link">(〜￣▽￣)〜</a></li>
+            <li><a href="#" id="actuality-link">Польза</a></li>
+            <li><a href="#" id="forwho-link">Для кого</a></li>
+            <li><a href="#" id="howdoesitworks-link">Как работает</a></li>
+            <li><a href="#" id="characters-link">Характеристики</a></li>
+            <li><a href="#" id="modules-link">Модули</a></li>
+            <li><a href="#" id="connect-link">Связаться с нами</a></li>
+
         </ul>
     </nav>
+
+
+    <!-- ГЛАВНАЯ -->
     <section class="page TOP">
-        <div class="main-picture view-picture"></div>
+        <!-- <div class="main-picture view-picture"></div> -->
         <div class="main-info">
-            <h1>----------</h1>
-            <p class="p1">idk really</p>
-            <button id="ove"> пупупу заварю ка кофейку </button>
+            <div class="main-cards">
+                <h1>SmartPot - умное кашпо
+                    с автополивом и
+                    контролем роста</h1>
+                <p class="p1">Подбирет индивидуальные условия, основываясь на показателях окружающей среды и
+                    потребностях растения. Просто доливай воду и смотри, как они растут.</p>
+            </div>
+            <div class="main-cards">
+                <img src="images/sections/gorshok.png" alt="">
+            </div>
         </div>
     </section>
-    <section class="page promo">
+
+    <!-- ПОЛЬЗА -->
+    <section class="newpage-benefit">
+        <div class="benefit">
+            <div class="benefit-cards">
+                <img src="images/advantages/1.png" alt="">
+                <h1>Автополив</h1>
+                <p class="p2">
+                    Автополив с возможностью автономной работы на протяжении 1 месяца
+                </p>
+            </div>
+            <div class="benefit-cards">
+                <img src="images/advantages/2.png" alt="">
+                <h1>Дизайн</h1>
+                <p class="p2">
+                    Современный дизайн и модели с обвесами.
+                </p>
+            </div>
+            <div class="benefit-cards">
+                <img src="images/advantages/3.png" alt="">
+                <h1>Кастомизация</h1>
+                <p class="p2">
+                    Обширный ассортимент модулей для различных задач, включая лампу
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ДЛЯ КОГО -->
+    <section class="newpage-forwho cool">
+        <h1 class="h1">Кому это будет полезно?</h1>
+        <div class="forwho">
+            <div class="forwho-cards">
+                <img src="images/for_who/man.png" alt="">
+                <h1>
+                    Михаил
+                </h1>
+                <p class="p2">
+                    Просто забываю полить)
+                </p>
+            </div>
+
+            <div class="forwho-cards">
+                <img src="images/for_who/girl.png" alt="">
+                <h1>
+                    Елена
+                </h1>
+                <p class="p2">
+                    Хочу не думать об этом каждый день!
+                </p>
+            </div>
+
+
+            <div class="forwho-cards">
+                <img src="images/for_who/boy.png" alt="">
+                <h1>
+                    Алексей
+                </h1>
+                <p class="p2">
+                    Мне подарили цветы, и что теперь делать?
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- КАК РАБОТАЕТ -->
+
+    <section class="newpage-howworks">
+        <div class="howworks">
+            <div class="howworks-cards">
+                <svg width="250" height="175" viewBox="0 0 300 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 174C10.4041 -15.9914 81.9531 -34.5247 299 50.1523" stroke="#4DBAB3" stroke-width="4"
+                        stroke-dasharray="40 40" />
+                </svg>
+
+                <p class="p2">
+                    Пересадите желаемое растение в спецалезированную ёмкость и переместите её в SmartPot
+                </p>
+            </div>
+            <div class="howworks-cards">
+                <p class="p2">
+                    Подключись к точке доступа горшка, введи пароль от своего wifi и подключитесь к кашпо
+                </p>
+                <svg width="250" height="136" viewBox="0 0 285 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.46886 1C-9.40173 103.589 207.383 162.339 284 120.259" stroke="#4DBAB3" stroke-width="4"
+                        stroke-dasharray="40 40" />
+                </svg>
+
+            </div>
+            <div class="howworks-cards">
+                <svg width="250" height="234" viewBox="0 0 342 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1 232C123.992 223.112 169.752 201.448 219.795 140.113C239.175 68.2261 272.482 42.537 340 2"
+                        stroke="#4DBAB3" stroke-width="4" stroke-dasharray="40 40" />
+                </svg>
+
+                <p class="p2">
+                    Следите за показателями и просто долевайте воды
+                </p>
+            </div>
+            <div class="howworks-cards2">
+                <p class="p2">
+                    Радуйся прекрасным цветам и свежим овощам
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ХАРАКТЕРИСТИКИ -->
+    <section class="newpage-characters cool2">
+        <h1 class="h2">
+            Характеристики устройства
+        </h1>
+        <div class="newpage-characters">
+
+            <div class="characters">
+                <p class="p3">
+                    Материал
+                </p>
+                <p class="p2">
+                    ABS
+                </p>
+            </div>
+            <div class="characters">
+                <p class="p3">
+                    Объём резервуара
+                </p>
+                <p class="p2">
+                    2 литра
+                </p>
+            </div>
+            <div class="characters">
+                <p class="p3">
+                    Время автономной работы
+                </p>
+                <p class="p2">
+                    40 дней
+                </p>
+            </div>
+            <div class="characters">
+                <p class="p3">
+                    Беспроводное подключение
+                </p>
+                <p class="p2">
+                    WiFi
+                </p>
+            </div>
+            <div class="characters">
+                <p class="p3">
+                    Емкость для посадки
+                </p>
+                <p class="p2">
+                    150 x 160 x 180 мм
+                </p>
+            </div>
+            <div class="characters">
+                <p class="p3">
+                    Разъём для зарядки
+                </p>
+                <p class="p2">
+                    Type-C
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- вопросы??? -->
+    <section class="question">
+        <div class="questpicture view-picture"></div>
+    </section>
+    <!-- Модули -->
+    <section class="newpage-modules cool2">
+        <h1 class="h2">
+            Модули
+        </h1>
+        <div class="modules">
+            <div class="modules-cards">
+                <img src="images/modules/1.png" alt="">
+                <h1>
+                    Лампа
+                </h1>
+                <p>
+                    Для темных помещений и капризных растений
+                </p>
+            </div>
+            <div class="modules-cards">
+                <img src="images/modules/2.png" alt="">
+                <h1>
+                    Голосовое уведомление
+                </h1>
+                <p>
+                    Узнавай сколько осталось воды и другую
+                </p>
+                <p>
+                    полезную информацию с помощью голосового асиситента
+                </p>
+            </div>
+            <div class="modules-cards">
+                <img src="images/modules/3.png" alt="">
+                <h1>
+                    Камера
+                </h1>
+                <p>
+                    Таймлапс камера для социальных сетей
+                </p>
+            </div>
+            <div class="modules-cards">
+                <img src="images/modules/4.png" alt="">
+                <h1>
+                    Дисплей
+                </h1>
+                <p>
+                    Выводи полезную иформацию на кашпо
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech characters -->
+    <section class="newpage-characters cool2">
+
+        <h1 class="h2">Технические характеристики</h1>
+        <div class="newpage-characters">
+            <div class="characters">
+                <p class="p3">Микроконтроллер</p>
+                <p class="p2">ESP32</p>
+            </div>
+            <div class="characters">
+                <p class="p3">Датчик влажности почвы</p>
+                <p class="p2">Сapacitive moisture sensor V1.2</p>
+            </div>
+            <div class="characters">
+                <p class="p3">Светочувствительный датчик</p>
+                <p class="p2">Photosensitive resistance sensor module</p>
+            </div>
+            <div class="characters">
+                <p class="p3">Помпа</p>
+                <p class="p2">DS766b</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Связаться с нами -->
+
+
+    <!-- <section class="page promo">
         <h2>The best thing people ever created </h2>
         <p> (замороженный сок) </p>
         <div class="services">
@@ -72,20 +334,19 @@
             </div>
             <div class="services-card">
                 <img src="http://www.cholod.ru/content/catalog/8c7238d6a770e5a98788503e9a0402fa.png" alt="">
-                <h3 >
-                    (*･∀･)／＼(･∀･*) 
+                <h3>
+                    (*･∀･)／＼(･∀･*)
                 </h3>
                 <button type="button" class="btn btn-secondary">СЪЕШЬ МЕНЯ</button>
             </div>
         </div>
-    </section>
-    <section class="page secondary">
+    </section> -->
+
+    <section class="page2 secondary">
         <div class="secondary-picture view-picture"></div>
         <div class="sec-info">
-            <h2>----------------------------</h2>
-            <p class="p1">wrld onn druggs </p>
             <button id="top" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal"> ваше предожение </button>
+                data-bs-target="#exampleModal"> Ваш вопрос </button>
         </div>
     </section>
 
@@ -94,29 +355,29 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">---------</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">answer something please</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="form-order">
                         <label class="form-label">
-                            ник
+                            Ваше имя
                             <input type="text" class="form-control" name="nick">
                         </label>
                         <label class="form-label">
-                            id бункера
+                            Номер телефона
                             <input class="form-control" type="tel" name="idbunkera">
                         </label>
-                        <label for="select-way">Мэйк э дисижен </label>
+                        <label for="select-way">Выберите модуль </label>
                         <select name="way" id="select-way" class="form-select" aria-label="Default select example">
-                            <option selected>sadj</option>
-                            <option value="meow^^">((мяу(...</option>
-                            <option value="brick">кирпич</option>
-                            <option value="jump">джамп</option>
-                            <option value="loneliness">лоинлесс</option>
+                            <option selected>модуль</option>
+                            <option value="meow^^">лампа</option>
+                            <option value="brick">голосовое увед.</option>
+                            <option value="jump">камера</option>
+                            <option value="loneliness">дисплей</option>
                         </select>
                         <label class="form-label" for="tripp-info">
-                            напишите чё-нибудь
+                            Ваша вопрос или пожелание
                         </label>
                         <textarea class="form-control" id="tripp-info" type="text" name="info"
                             style="width: 100%;"></textarea>

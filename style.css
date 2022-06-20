@@ -1,32 +1,68 @@
-@media (max-width: 576px){
+/* @media (max-width: 576px){
     .main-info {
         flex-direction: column;
         align-items: normal;
         
     }
-}
+} */
 html {
-    font-size: 17px;
+    font-size: 24px;
 }
 .page{
     position: relative;
     height: 100vh;
+    background-color: 
+    rgba(248, 247, 252, 1);
 }
+
+
 .view-picture {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
-.main-picture {
+/* .main-picture {
     background-image: url(https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_mlechnyj_put_gorizont_124692_1280x720.jpg);
+} */
+
+/* МЕНЮШКА */
+.main-menu {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: .5rem 1rem;
 }
+
+.menu-list {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+.menu-list a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.menu-list li{
+    list-style-type: none;
+}
+
+.bi-cloud-haze2-fill {
+    display: none;
+}
+
+
+/* ГЛАВНАЯ */
 .main-info { 
     max-width: 1920px;
     min-width: 280px;
     margin: 0 auto;
-    text-align: center;
-    color: rgb(216, 189, 205);
+
+    color: rgb(0, 0, 0);
 
     position: absolute;
     top: 0;
@@ -34,24 +70,234 @@ html {
     left: 0;
     right: 0;
 
-    display: flex;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    display: grid;
+    margin-top: 2rem;
+    --columns-num: 2;
+    grid-template-columns: repeat(var(--columns-num), 880px);
+    grid-template-rows: auto;
+    column-gap: 14rem;
+    row-gap: 1rem;
 }
-.main-info button{
-    color: aqua;
-    background-color: rgba(0, 0, 0, 0.055);
+.main-cards {
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.main-cards img{
+    height: 804px;
+    width: 490px;
+}
+
 .main-info h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
 }
 .p1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.secondary-picture {
-    background-image: url(https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_chelovek_fonar_noch_115032_1920x1080.jpg);
+
+/* ПОЛЬЗА (ona est' navernoe ^^ */
+.newpage-benefit{
+    position: relative;
+    height: 400px;
+    background-color: 
+    rgba(248, 247, 252, 1);
+}
+.p2{
+    font-size: 25px;
+}
+.benefit {
+
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    margin-top: 5rem;
+    --columns-num: 3;
+    grid-template-columns: repeat(var(--columns-num), 400px);
+    grid-template-rows: auto;
+    column-gap: 10rem;
+    row-gap: 1rem;
+}
+.benefit-cards {
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.benefit-cards img{
+    height: 181px;
+    width: 159;
+}
+
+
+/* ДЛЯ КОГО??? */
+.h1 {
+    font-size: 60px;
+    margin-bottom: 15rem;
+    color: rgba(77, 186, 179, 1);
+}
+.newpage-forwho{
+    position: relative;
+    height: 867px;
+    background-color: 
+    rgb(255, 255, 255);
+}
+.forwho {
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    margin-top: 2rem;
+    --columns-num: 3;
+    grid-template-columns: repeat(var(--columns-num), 400px);
+    grid-template-rows: auto;
+    column-gap: 10rem;
+    row-gap: 1rem;
+}
+.forwho-cards{
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cool {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(15, 12, 12);
+    text-align: center;
+    padding: 5rem;
+    min-height: 100vh;
+
+}
+
+
+
+/* КАК РАБОТАЕТ */
+.newpage-howworks {
+    position: relative;
+    height: 800px;
+    background-color: 
+    rgba(248, 247, 252, 1);
+}
+.howworks {
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    margin-top: 5rem;
+    --columns-num: 4;
+    grid-template-columns: repeat(var(--columns-num), 300px);
+    grid-template-rows: auto;
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+.howworks-cards{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.howworks-cards2{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+/* CHARACTERS */
+.newpage-characters{
+    position: relative;
+    height: 802px;
+    background-color: 
+    rgba(248, 247, 252, 1);
+}
+.newpage-techcharacters{
+    position: relative;
+    height: 802px;
+    background-color: 
+    rgba(248, 247, 252, 1);
+}
+.characters {
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    margin-top: 2rem;
+    --columns-num: 2;
+    grid-template-columns: repeat(var(--columns-num), 350px);
+    grid-template-rows: auto;
+    column-gap: 10rem;
+    row-gap: 1rem;
+}
+.h2 {
+    font-size: 50px;
+    color: rgba(77, 186, 179, 1);
+}
+.p3{
+    font-size: 25px;
+    background-color: rgba(77, 186, 179, 1);
+}
+.cool2 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(15, 12, 12);
+
+    padding: 5rem;
+    min-height: 1080px;
+
+}
+
+
+/* QUESTION */
+.question{
+    position: relative;
+    height: 570px;
+}
+.questpicture{
+    background-image: url("images/question/fe2006456eb7a0911c8a95c4ad9f4739.jpg");
+}
+
+/* Модули */
+.modules-cards img{
+    height: 249px;
+    width: 249px;
+}
+.modules{
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    margin-top: 2rem;
+    --columns-num: 4;
+    grid-template-columns: repeat(var(--columns-num), 350px);
+    grid-template-rows: auto;
+    column-gap: 7rem;
+    row-gap: 1rem;
+}
+
+.page2{
+    position: relative;
+    height: 20vh;
+    background-color: 
+    rgba(248, 247, 252, 1);
 }
 .sec-info { 
     max-width: 1920px;
@@ -79,33 +325,7 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
 }
 
-.main-menu {
-    position: fixed;
-    z-index: 999999;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(47, 79, 79, 0.466);
-    padding: .5rem 1rem;
-}
 
-.menu-list {
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-}
-.menu-list a{
-    text-decoration: none;
-    color: rgba(245, 245, 245, 0.911);
-}
-.menu-list li{
-    list-style-type: none;
-}
-
-.bi-cloud-haze2-fill {
-    display: none;
-}
 
 .promo {
     background: linear-gradient(rgb(104, 98, 41),rgb(2, 2, 12));
@@ -151,19 +371,25 @@ h3 {
     font-size: 25px;
 }
 
+
+
 @media (min-width: 577px) and (max-width: 992px) {
+    .main-cards{
+        --columns-num: 1;
+    }
+    .main-cards img{
+        height: 404px;
+        width: 290px;
+    }
     .services{
         --columns-num: 2;
     }
-}
-
-@media (max-width: 576px){
     .main-menu{
         flex-wrap: wrap;
     }
     .bi-cloud-haze2-fill{
         display: block;
-        color: whitesmoke;
+        color: rgb(0, 0, 0);
         width: 1.3rem;
         height: 1.3rem;
         cursor: pointer;
@@ -173,7 +399,46 @@ h3 {
         height: 0;
         --menu-li-height: 1rem;
         --menu-li-gap: .5rem;
-        --menu-elems-num: 5;
+        --menu-elems-num: 8;
+        flex-direction: column;
+        gap: var(--menu-li-gap);
+        padding: 0;
+        overflow: hidden;
+        transition: height .7s;
+    }
+    .menu-list.show {
+        height: calc((var(--menu-li-height) + var(--menu-li-gap)) * var(--menu-elems-num));
+    }
+    .menu-list li{
+        height: var(--menu-li-height);
+    }
+}
+
+@media (max-width: 576px){
+    .main-cards img{
+        height: 404px;
+        width: 290px;
+    }
+    .main-info{
+        --columns-num: 1;
+    }
+
+    .main-menu{
+        flex-wrap: wrap;
+    }
+    .bi-cloud-haze2-fill{
+        display: block;
+        color: rgb(0, 0, 0);
+        width: 1.3rem;
+        height: 1.3rem;
+        cursor: pointer;
+    }
+    .menu-list{
+        width: 100%;
+        height: 0;
+        --menu-li-height: 1rem;
+        --menu-li-gap: .5rem;
+        --menu-elems-num: 9;
         flex-direction: column;
         gap: var(--menu-li-gap);
         padding: 0;
@@ -195,7 +460,7 @@ h3 {
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 13px;
   }
   
 ::-webkit-scrollbar-track {
@@ -206,6 +471,6 @@ h3 {
   
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(45deg, #6a85b6, #bac8e0);
+    background: linear-gradient(45deg, #2a8f2f, #105ee6);
   }
  
